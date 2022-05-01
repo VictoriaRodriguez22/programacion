@@ -10,17 +10,17 @@ let aumento: number = 0;
 let nuevosalario: number =0;
 
 
-if (sueldo<15000){
+if (0<sueldo<=15000){
   aumento = sueldo*0.20;
   nuevosalario = sueldo + aumento;
   console.log("Su Nuevo salario es de" nuevosalario);
 
-}else if(sueldo>15001 && sueldo<20000){
+}else if(sueldo>15001 && sueldo<=20000){
   aumento = sueldo*0.10;
   nuevosalario = sueldo + aumento;
   console.log("Su Nuevo salario es de" nuevosalario);
 
-}else if(sueldo>20001 && sueldo<25000){
+}else if(sueldo>20001 && sueldo<=25000){
   aumento = sueldo*0.05;
   nuevosalario = sueldo + aumento;
   console.log("Su Nuevo salario es de" nuevosalario);
