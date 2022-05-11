@@ -1,4 +1,4 @@
-let dato1 = document.getElementById("dato1");
+aumentolet dato1 = document.getElementById("dato1");
 let rotulo1 = document.getElementById("rotulo1");
 let btnEnv = document.getElementById ("btnEnviar");
 
