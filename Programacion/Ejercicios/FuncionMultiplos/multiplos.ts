@@ -8,21 +8,15 @@ rotulo1.innerHTML = "Ingrese un Número";
 rotulo2.innerHTML = "Ingrese otro Número";
 
 btnEnviar.addEventListener("click", () => {
-  let multiplos = () => {
+  let esMultiplos = () => {
     let numero1: number = Number(dato1.value);
     let numero2: number = Number(dato2.value);
-    let contador: number = 0;
+ 
+    if (numero2 % numero1 == 0) {
+     console.log ("Verdadero", numero2,  "es múltiplo de", numero1);
 
-    if (numero1 <= numero2) {
-      contador = contador + 1;
-      if (numero2 / contador == numero1) {
-        console.log("Verdadero", numero1, "es divisible por", numero2);
       } else {
-        console.log("Falso", numero1, "no es divisible por", numero2);
+        console.log("Falso", numero2, "no es múltiplo de", numero1);
       }
-    }
-    console.log("Falso", numero2, "no puede ser multiplo", numero1);
   };
-  multiplos();
-});
-//no esta terminado. aun sigo pensando razonamiento
+  esMultiplos();
